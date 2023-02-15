@@ -5,7 +5,7 @@
 </template>
 
 <script>
-export default {
-  // future
-}
+  export default {
+    // future
+  }
 </script>

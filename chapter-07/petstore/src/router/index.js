@@ -9,8 +9,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'iMain',
       component: Main,
@@ -27,14 +26,12 @@ export default new Router({
       name: 'Id',
       component: Product,
       props: true,
-      children: [
-          {
-              path: 'edit',
-              name: 'Edit',
-              component: EditProduct,
-              props: true
-          }
-      ]
+      children: [{
+        path: 'edit',
+        name: 'Edit',
+        component: EditProduct,
+        props: true
+      }]
     },
     {
       path: '*',
